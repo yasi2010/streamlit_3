@@ -32,7 +32,7 @@ model1.add(tf.keras.layers.Dense(units=num_classes, activation='softmax'))
 # model1 = tf.keras.layers.Dense(4, activation = 'softmax')(model1)
 # model1 = tf.keras.models.Model(inputs = effnet.input, outputs = model1)
 
-model1.load_weights('cifar_1/model.h5')
+model1.load_weights('model.h5')
 
 
 if file is not None:
