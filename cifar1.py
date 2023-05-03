@@ -4,7 +4,7 @@ import cv2
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
-st.title('Brain Tumor Classifier')
+st.title('تشخیص 10 کلاسه')
 st.write('')
 st.write('This is a python app which classifies a brain MRI into one of the four classes : ')
 st.write(' No tumor, Pituitary tumor,Meningioma tumor or Glioma tumor')
