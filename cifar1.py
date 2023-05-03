@@ -47,5 +47,6 @@ if file is not None:
     
     st.write('')
     st.write('')
+    st.write('')
     st.write('این وب اپلیکیشن توسط یاسی توسعه یافته است.')
 
