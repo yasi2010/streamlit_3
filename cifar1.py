@@ -27,7 +27,7 @@ model1.load_weights('model.h5')
 
 if file is not None:
     image = Image.open(file)
-    # st.image(image)
+    st.image(image)
     image = np.array(image)
     # image = image[:,:,::-1].copy()
     # image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -35,7 +35,7 @@ if file is not None:
     # image = 255 - image.astype(float)
     # image /= 255
     # plt.imshow(image)
-    st.image(image)
+    # st.image(image)
     images = image.reshape(1,IMAGE_SIZE,IMAGE_SIZE,3)
     predictions1 = model1.predict(images)
     print(predictions1)
