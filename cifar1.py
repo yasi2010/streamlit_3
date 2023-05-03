@@ -6,8 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 st.title('تشخیص 10 کلاسه')
 st.write('')
-st.write('This is a python app which classifies a brain MRI into one of the four classes : ')
-st.write(' No tumor, Pituitary tumor,Meningioma tumor or Glioma tumor')
+st.write('این برنامه قادر تشخیص 10 کلاس متفاوت شامل هواپیما، اتوموبیل، پرنده، گربه، گوزن، سگ، غورباقه، اسب، کشتی و کامیون است.')
 file = st.file_uploader(label='Upload image', type=['jpg','jpeg','png'], accept_multiple_files=False, key=None)
 IMAGE_SIZE = 32
 num_classes = 10
