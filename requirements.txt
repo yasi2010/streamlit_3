@@ -1,0 +1,7 @@
+h5py
+tensorflow
+streamlit
+Pillow
+opencv-python-headless
+numpy
+matplotlib
