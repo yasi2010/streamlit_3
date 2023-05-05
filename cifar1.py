@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 st.title('تشخیص 10 کلاسه')
 st.write('')
-st.write('.این برنامه قادر به تشخیص 10 کلاس متفاوت شامل هواپیما، اتوموبیل، پرنده، گربه، گوزن، سگ، غورباقه، اسب، کشتی و کامیون است')
+st.write('.این برنامه قادر به تشخیص 10 کلاس متفاوت شامل هواپیما، اتوموبیل، پرنده، گربه، گوزن، سگ، قورباغه اسب، کشتی و کامیون است')
 st.write('')
 file = st.file_uploader(label=':بارگذاری تصویر', type=['jpg','jpeg','png'], accept_multiple_files=False, key=None)
 IMAGE_SIZE = 32
@@ -41,7 +41,7 @@ if file is not None:
     print(predictions1)
     predictions1 = np.argmax(predictions1, axis=1)
     print(predictions1)
-    labels = ['هواپیما', 'اتومبیل', 'پرنده', 'گربه','گوزن','سگ','غورباقه','اسب','کشتی','کامیون']
+    labels = ['هواپیما', 'اتومبیل', 'پرنده', 'گربه','گوزن','سگ','قورباغه','اسب','کشتی','کامیون']
     st.write(':تصویر بارگذاری شده')
     st.title(labels[predictions1[0]])
     
